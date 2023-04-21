@@ -17,6 +17,7 @@
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
 import { io } from "socket.io-client";
+import { SLCK_BACKEND_URL } from "@/config";
 
 export default {
   setup() {
@@ -27,7 +28,7 @@ export default {
     const terminalOutput = ref(null);
 
     onMounted(() => {
-      const ws = io("http://localhost:8000");
+      const ws = io(SLCK_BACKEND_URL);
       ws.on("connect", () => {
         isReady.value = true;
       });
