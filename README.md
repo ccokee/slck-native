@@ -15,7 +15,7 @@ Before you begin, make sure you have the following installed:
 1. Clone the SLCK Vue-Native Terminal App repository:
 
    ```sh
-   git clone https://github.com/yourusername/slck-vue-native-terminal.git
+   git clone https://github.com/ccokee/slck-vue-native-terminal.git
    cd slck-vue-native-terminal
    ```
 
